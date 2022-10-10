@@ -1,4 +1,6 @@
-///////////  ARTICULOS  //////////////
+//////////////////////////  ARTICULOS  /////////////////////////
+
+/////////////////// Camiseta ///////////////////
 
 db.articulos.insertOne({
     _id: 1,
@@ -10,9 +12,10 @@ db.articulos.insertOne({
     almacen: 'A',
 })
 
-//////////////////////////////////////
+/////////////////// Pantalon ///////////////////
 
 db.articulos.insertOne({
+    _id: 2,
     nombre: 'Pantalon',
     marca: 'Chevioto',
     talla: [12, 14, 16],
@@ -21,9 +24,10 @@ db.articulos.insertOne({
     almacen: 'B',
 })
 
-//////////////////////////////////////
+//////////////////// Zapato //////////////////
 
 db.articulos.insertOne({
+    _id: 3,
     nombre: 'Zapato',
     marca: 'Walk',
     talla: [40, 41],
@@ -32,9 +36,10 @@ db.articulos.insertOne({
     almacen: 'A',
 })
 
-//////////////////////////////////////
+//////////////////// Camisa //////////////////
 
 db.articulos.insertOne({
+    _id: 4,
     nombre: 'Camisa',
     marca: 'YSL',
     talla: ['S', 'M', 'L', 'XL'],
@@ -43,9 +48,10 @@ db.articulos.insertOne({
     almacen: 'C',
 })
 
-//////////////////////////////////////
+/////////////////// Medias ///////////////////
 
 db.articulos.insertOne({
+    _id: 5,
     nombre: 'Medias',
     marca: 'GEF',
     talla: [10, 12],
@@ -53,3 +59,23 @@ db.articulos.insertOne({
     precio: 5000,
     almacen: 'A',
 })
+
+/////////////////// Consulta todo ///////////////////
+
+db.articulos.find({})
+
+/////////////////// Consulta uno solo ///////////////////
+
+db.articulos.find({_id: 3})
+
+/////////////////// Consulta con un criterio ///////////////////
+
+db.articulos.find({marca: 'GEF'})
+
+/////////////////// Consulta con un criterio ///////////////////
+
+db.articulos.find({almacen: 'A'})
+
+/////////////////// Consulta con un criterio ///////////////////
+
+db.articulos.find({talla: 'M'}, {almacen})

@@ -78,4 +78,4 @@ db.articulos.find({almacen: 'A'})
 
 /////////////////// Consulta con un criterio ///////////////////
 
-db.articulos.find({talla: 'M'}, {almacen})
+db.articulos.find({talla: 'M'})

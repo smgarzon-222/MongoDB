@@ -1,0 +1,42 @@
+///////////  INSTITUTO G68  //////////////
+
+
+db.cursos.insertOne({
+    _id: 1,
+    nombre: 'Desarrollo Web',
+    tags: ['web', 'mongodb', 'nodejs', 'js'],
+    precio: 150000,
+    estado: 'disponible'
+})
+
+///////////////////////
+
+db.cursos.insertOne({
+    nombre: 'Machine Learning',
+    tags: ['web', 'mongodb', 'nodejs', 'js'],
+    precio: 120000,
+    disponible: true,
+    ts: new Timestamp(),
+    inicio: new Date("2022-10-01T11:25")
+})
+
+//////////////////////
+
+db.cursos.insertMany([
+    {_id: 2, nombre: 'Ciencia de datos', tags: ['python', 'sql', 'nosql'],
+    precio: 138000, estado: 'no disponible'},
+    {_id: 3, nombre: 'Azure y AWS', tags: ['aws', 'azure', 'js'], precio:
+    420000, estado: 'disponible'},
+    {_id: 4, nombre: 'Diseño web', tags: ['js', 'html', 'css'], precio: 960000,
+    estado: 'no disponible'}
+])
+
+//////////////////////////////////////
+
+db.cursos.insertOne({
+_id: 1,
+nombre: 'Desarrollo Web',
+tags: ['web', 'mongodb', 'nodejs', 'js'],
+precio: 150000,
+estado: 'disponible'
+})

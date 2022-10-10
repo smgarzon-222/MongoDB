@@ -1,42 +1,55 @@
-///////////  INSTITUTO G68  //////////////
+///////////  ARTICULOS  //////////////
 
-
-db.cursos.insertOne({
+db.articulos.insertOne({
     _id: 1,
-    nombre: 'Desarrollo Web',
-    tags: ['web', 'mongodb', 'nodejs', 'js'],
-    precio: 150000,
-    estado: 'disponible'
+    nombre: 'Camiseta',
+    marca: 'GEF',
+    talla: ['S', 'M'],
+    cantidad: 10,
+    precio: 30000,
+    almacen: 'A',
 })
-
-///////////////////////
-
-db.cursos.insertOne({
-    nombre: 'Machine Learning',
-    tags: ['web', 'mongodb', 'nodejs', 'js'],
-    precio: 120000,
-    disponible: true,
-    ts: new Timestamp(),
-    inicio: new Date("2022-10-01T11:25")
-})
-
-//////////////////////
-
-db.cursos.insertMany([
-    {_id: 2, nombre: 'Ciencia de datos', tags: ['python', 'sql', 'nosql'],
-    precio: 138000, estado: 'no disponible'},
-    {_id: 3, nombre: 'Azure y AWS', tags: ['aws', 'azure', 'js'], precio:
-    420000, estado: 'disponible'},
-    {_id: 4, nombre: 'Diseño web', tags: ['js', 'html', 'css'], precio: 960000,
-    estado: 'no disponible'}
-])
 
 //////////////////////////////////////
 
-db.cursos.insertOne({
-_id: 1,
-nombre: 'Desarrollo Web',
-tags: ['web', 'mongodb', 'nodejs', 'js'],
-precio: 150000,
-estado: 'disponible'
+db.articulos.insertOne({
+    nombre: 'Pantalon',
+    marca: 'Chevioto',
+    talla: [12, 14, 16],
+    cantidad: 23,
+    precio: 54000,
+    almacen: 'B',
+})
+
+//////////////////////////////////////
+
+db.articulos.insertOne({
+    nombre: 'Zapato',
+    marca: 'Walk',
+    talla: [40, 41],
+    cantidad: 12,
+    precio: 100000,
+    almacen: 'A',
+})
+
+//////////////////////////////////////
+
+db.articulos.insertOne({
+    nombre: 'Camisa',
+    marca: 'YSL',
+    talla: ['S', 'M', 'L', 'XL'],
+    cantidad: 30,
+    precio: 35000,
+    almacen: 'C',
+})
+
+//////////////////////////////////////
+
+db.articulos.insertOne({
+    nombre: 'Medias',
+    marca: 'GEF',
+    talla: [10, 12],
+    cantidad: 30,
+    precio: 5000,
+    almacen: 'A',
 })

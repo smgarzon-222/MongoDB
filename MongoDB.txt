@@ -80,10 +80,3 @@ db.articulos.find({almacen: 'A'})
 
 db.articulos.find({talla: 'M'})
 
-
-
-Sabes Mile, estuve pensando que escribirte desde que leí tu mensaje del día de hoy, y me quede meditando que res no sé qué responderte sin sonar mal, así que lo voy hacer con todo mi corazón.
-En ocasiones no he podido ir ya que los horarios no me cuadran para hacer dos cosas al tiempo, y en otras ocasiones es porque me encuentro ya programado, otras porque no me he sentido con mucho ánimo de salir, eso y otras cosas, así que lo siento mucho si me desprendí un poco.
-No recuerdo que me hayas dicho que me quieres o me estimas, lo siento, ya que como bien dices no se te da bien expresarlo, pero creo que tampoco se te da bien demostrarlo.
-Lo otro es que yo siempre te he pensado desde hace muchos años, no sabes lo nervioso, entusiasmado y hasta feliz después de que solamente tu notificación el día de ayer  
-
